@@ -1,0 +1,161 @@
+:root {
+    --button-color: #00617c;
+    --second-color: #050f1a;
+}
+
+
+.sponsor {
+    background-color: black;
+}
+
+center h2{
+    margin-bottom: 1em !important;
+}
+center div{
+    /* border: 1px solid white; */
+    margin-bottom: 2em !important;
+}
+
+.sponsor .style {
+    height: 150px;
+    width: 25%;
+    display: inline-block;
+    padding: 2%;
+    border: 2px solid var(--button-color);
+    border-radius: 15px;
+    box-shadow: 0 0 0.1rem var(--button-color), 0 0 0.1rem var(--button-color), 0 0 1rem #00617c, 0 0 0.4rem #00617c, 0 0 1.4rem #00617c, inset 0 0 0.7rem #00617c;
+    &:hover {
+        transform: scale(1.05);
+    }
+    transition: transform linear 150ms;
+
+    margin: 24px;
+}
+
+#targetSection > div.parallax-content > div > center > div > span:nth-child(2) > a > img{
+    background-color: rgb(237, 237, 237);
+}
+
+.sponsor .h2 {
+    font-weight: strong;
+    text-decoration: underline;
+    margin-bottom: 20%;
+}
+
+@media (max-width:1024px) {
+    .sponsor .style {
+        height: 150px;
+        width: 26%;
+        display: inline-block;
+        padding: 2%;
+    }
+}
+
+@media (max-width:767px) {
+    .sponsor .style {
+        height: 100px;
+        width: 30%;
+        display: inline-block;
+        padding: 2%;
+    }
+}
+
+@media (max-width:480px) {
+    .sponsor .style {
+        height: 80px;
+        width: 75%;
+        display: inline-block;
+        padding: 2%;
+    }
+}
+
+.time-content {
+    display: flex;
+    width: auto;
+    column-gap: 30px;
+    align-items: center;
+    /* margin: 2rem; */
+    border: 1px solid white;
+    padding: 2rem 2.5rem;
+    border-radius: 0.5rem;
+    background: rgba(250, 250, 250, 0.2);
+}
+
+.time {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.number {
+    font-weight: 800;
+    font-size: 80px;
+    line-height: 1;
+    color: #eee;
+}
+
+.text {
+    text-transform: capitalize;
+    color: #fff;
+    font-weight: 600;
+    font-size: 12px;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+/* Styling for the entire page */
+.sponsor {
+    background: transparent;
+    height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow-y: scroll;
+    scrollbar-width: none;
+}
+
+.sponsor::-webkit-scrollbar {
+    width: 0;
+    /* Hide the scrollbar for WebKit-based browsers (Chrome, Safari, etc.) */
+}
+
+.sponsor .style {
+    height: 200px;
+    /* Rest of your styles */
+}
+
+@media (max-width:520px) {
+
+    .time-content {
+        display: flex;
+        width: auto;
+        column-gap: 15px;
+        align-items: center;
+        margin: 2rem;
+        border: 1px solid white;
+        padding: 2rem 2.5rem;
+        border-radius: 0.5rem;
+        background: rgba(250, 250, 250, 0.2);
+    }
+
+    .number {
+        font-weight: 600;
+        font-size: 40px;
+        line-height: 1;
+        color: #eee;
+    }
+
+    .text {
+        text-transform: capitalize;
+        color: #fff;
+        font-weight: 600;
+        font-size: 7px;
+    }
+}
